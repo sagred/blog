@@ -1,13 +1,13 @@
 import React from 'react'
-import Header from './components/Header'
-import Body from './components/Body'
-import Footer from './components/Footer'
 import './App.css'
+import { useHistory } from 'react-router'
 
 function App() {
 
-    const clicked = () => {
-        console.log("clicked")
+    let history = useHistory();
+
+    const click = () => {
+        history.push("/title");
     }
 
     return (
@@ -17,8 +17,8 @@ function App() {
             <a className = 'id'>@sagred</a>
           </div>
           <div className = 'body' >
-              <a href ='#'>
-              <div className = 'card' onClick = {() => clicked()}>
+              <a onClick = {click}>
+              <div className = 'card'>
                   <div className = 'cardImage'>
                    </div>
                    <div className = 'cardTitle'> 

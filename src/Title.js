@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Title() {
     return (
         <div>
-            <h1>THis is FOoter</h1>
+            This is the title page
         </div>
     )
 }
